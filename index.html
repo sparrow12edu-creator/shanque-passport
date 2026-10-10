@@ -1,7 +1,7 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>山雀國文課・學習護照</title><style>body{margin:0;background:#fffdd3;color:#283c69;font:17px 'Microsoft JhengHei',sans-serif}main{max-width:520px;margin:15vh auto;padding:28px}h1{font-family:serif;font-size:32px}p{line-height:1.7}button{background:#5c7bd0;color:#fffdd3;border:0;border-radius:14px;padding:14px 22px;font:inherit}button:disabled{opacity:.5}</style><script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script></head><body><main><p>山雀國文課</p><h1>我的學習護照</h1><p id="message" role="status">正在確認你的 LINE 身分……</p><button id="retry" hidden>重新開啟</button></main><script>
 // Only public IDs/URLs belong here. Never paste channel secrets or messaging tokens.
-const LIFF_ID='填入LIFF_ID';
-const STUDENT_APP_URL='填入學生入口exec網址';
+const LIFF_ID='2011952206-wMSZ1fyL';
+const STUDENT_APP_URL='https://script.google.com/macros/s/AKfycbxheNnzILw5AXhhtWqwl22dipTvWHmclG7z27wbhyq3y7yC63o6y6U4MewfUL7EIVoc_w/exec';
 const button=document.getElementById('retry');button.onclick=()=>location.reload();
 async function start(){try{
  if(LIFF_ID.includes('填入')||!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(STUDENT_APP_URL))throw Error('學生入口設定尚未完成。');
